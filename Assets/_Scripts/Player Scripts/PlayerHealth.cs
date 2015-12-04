@@ -9,7 +9,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour 
+public class PlayerHealth : MonoBehaviour
 {
 	//PUBLIC INSTANCE VARIABLES (ACCESSIBLE IN UNITY)
 	public int startingHealth = 100; //the amount of health the player starts the game with.
