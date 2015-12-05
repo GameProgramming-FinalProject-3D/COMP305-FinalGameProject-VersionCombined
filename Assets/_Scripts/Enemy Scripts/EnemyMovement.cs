@@ -1,7 +1,7 @@
 ﻿/*
 	Script File:		EnemyMovement.cs
 	Author:				Khandker Faim Hussain
-	Date Modified:		12/03/2015
+	Date Modified:		12/04/2015
 	Description:		Code created from "Survival Shooter" Tutorial
 	Revision History:	IDK!!!...
 */
