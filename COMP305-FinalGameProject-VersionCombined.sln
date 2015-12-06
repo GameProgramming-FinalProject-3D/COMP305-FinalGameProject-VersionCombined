@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP305-FinalGameProject-VersionCombined.CSharp", "COMP305-FinalGameProject-VersionCombined.CSharp.csproj", "{79783AC9-E939-684A-8D1F-DF72AE817A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMP305-FinalGameProject-VersionCombined.CSharp.Editor", "COMP305-FinalGameProject-VersionCombined.CSharp.Editor.csproj", "{EA8073B7-1D0E-32D5-0BFA-D81827999EE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79783AC9-E939-684A-8D1F-DF72AE817A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79783AC9-E939-684A-8D1F-DF72AE817A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79783AC9-E939-684A-8D1F-DF72AE817A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79783AC9-E939-684A-8D1F-DF72AE817A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8073B7-1D0E-32D5-0BFA-D81827999EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8073B7-1D0E-32D5-0BFA-D81827999EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8073B7-1D0E-32D5-0BFA-D81827999EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8073B7-1D0E-32D5-0BFA-D81827999EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

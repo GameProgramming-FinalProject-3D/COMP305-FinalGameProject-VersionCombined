@@ -126,7 +126,9 @@
      <Compile Include="Assets\Imported Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Scripts\BottlePickUp.cs" />
      <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyAttack.cs" />
+     <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\Player Scripts\PlayerHealth.cs" />

@@ -11,7 +11,9 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-	//PUBLIC INSTANCE VARIABLES (ACCESSIBLE IN UNITY)
+    //PUBLIC INSTANCE VARIABLES (ACCESSIBLE IN UNITY)
+
+
 	public int startingHealth = 100; //the amount of health the player starts the game with.
 	public int currentHealth; //the current health the player has.
 	public Slider healthSlider; // reference to the UI's health bar.
@@ -19,29 +21,34 @@ public class PlayerHealth : MonoBehaviour
 //	public AudioClip deathClip; //the audio clip to play when the player dies.
 	public float flashSpeed = 5f; //the speed the damageImage will fade at.
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f); // the colour the damageImage is set to, to flash. RED!
+   
 	
 	//REFERENCES
-	private Animator _anim; //reference to the Animator component.
+
+    private Animator _anim; //reference to the Animator component.
 	private AudioSource _hurtSound; //reference to the AudioSource component.
+    private AudioSource _count;
 //	private Player _playerMovement; //reference to the player's movement.
 //	private PlayerShooting _playerShooting; //reference to the PlayerShooting script.
 //	private bool _isDead; //whether the player is dead.
 	private bool _damaged; // true when the player gets damaged.
-	
-	//METHODS (OFTEN USED)
-	void Awake ()
+
+ 
+    //METHODS (OFTEN USED)
+    void Awake ()
 	{
 		// Setting up the references.
 		_anim = GetComponent <Animator> ();
 		_hurtSound = GetComponent <AudioSource> ();
+       // this._count = GetComponent<AudioSource>();
 //		_playerMovement = GetComponent <Player> ();
 //		_playerShooting = GetComponentInChildren <PlayerShooting> (); //referencing to the child of Player: "gun barrel".
 		
 		// Set the starting health of the player.
 		currentHealth = startingHealth;
+       
 	}
-	
-	
+
 	void Update ()
 	{
 		// If the player has just been damaged
@@ -65,6 +72,12 @@ public class PlayerHealth : MonoBehaviour
 	
 	//PUBLIC METHODS
 	//this method is called by other scripts in Unity. (must be public, or won't work)
+    public void PickBottle(int amount)
+    {
+        
+        this._count.Play();
+
+    }
 	public void TakeDamage (int amount)
 	{
 		// Set the damaged flag so the screen will flash
