@@ -1,20 +1,19 @@
-<<<<<<< HEAD
-﻿/*
+/*
 	Script File:		BottlePickUp.cs
 	Author:				Shruti Kirti Kaushal
 	Date Modified:		12/05/2015
 	Description:		...
 	Revision History:	...
+
+	//NOTE TO SHRUTI: ENSURE THAT THERE IS A PUBLIC VARIABLE THAT ALLOWS US TO MANIPULATE OUR SCORE VALUE!
 */
 using UnityEngine;
-=======
-﻿using UnityEngine;
->>>>>>> origin/master
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class BottlePickUp : MonoBehaviour {
-
+public class BottlePickUp : MonoBehaviour 
+{
     // private GameObject _player;
     public Text scoreLabel;
 
@@ -42,31 +41,26 @@ public class BottlePickUp : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
+    void Start () 
+	{
         this._scoreValue = 0;
         this._updateScoreBoard();
     }
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+	{
 	}
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-<<<<<<< HEAD
             AddScore(10);
-=======
-            AddScore(100);
->>>>>>> origin/master
         }
     }
        private void _updateScoreBoard()
     {
         this.scoreLabel.text = "Score: " + this._scoreValue;
-       
     }
 }
-

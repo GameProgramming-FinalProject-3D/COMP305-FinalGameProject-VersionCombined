@@ -67,8 +67,6 @@ public class GameController : MonoBehaviour
         
             this._livesValue -= value;
             this._updateScoreBoard();
-        
-
     }
 
     // Use this for initialization

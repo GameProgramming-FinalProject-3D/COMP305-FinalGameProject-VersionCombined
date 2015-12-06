@@ -74,9 +74,7 @@ public class PlayerHealth : MonoBehaviour
 	//this method is called by other scripts in Unity. (must be public, or won't work)
     public void PickBottle(int amount)
     {
-        
         this._count.Play();
-
     }
 	public void TakeDamage (int amount)
 	{
