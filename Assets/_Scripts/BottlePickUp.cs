@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿/*
 	Script File:		BottlePickUp.cs
 	Author:				Shruti Kirti Kaushal
@@ -6,6 +7,9 @@
 	Revision History:	...
 */
 using UnityEngine;
+=======
+﻿using UnityEngine;
+>>>>>>> origin/master
 using System.Collections;
 using UnityEngine.UI;
 
@@ -52,7 +56,11 @@ public class BottlePickUp : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
+<<<<<<< HEAD
             AddScore(10);
+=======
+            AddScore(100);
+>>>>>>> origin/master
         }
     }
        private void _updateScoreBoard()
