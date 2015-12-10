@@ -1,8 +1,8 @@
 ﻿/*
 	Script File:		PlayerHealth.cs
 	Author:				Khandker Faim Hussain
-	Date Modified:		Wed 12/02/2015
-	Description:		Code created from "Survival Shooter" Tutorial
+	Date Modified:		Thurs 12/10/2015
+	Description:		Code from "Survival Shooter" and Assignment 03
 	Revision History:	IDK!!!...
 */
 using UnityEngine;
@@ -12,8 +12,6 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     //PUBLIC INSTANCE VARIABLES (ACCESSIBLE IN UNITY)
-
-
 	public int startingHealth = 100; //the amount of health the player starts the game with.
 	public int currentHealth; //the current health the player has.
 	public Slider healthSlider; // reference to the UI's health bar.
@@ -22,12 +20,18 @@ public class PlayerHealth : MonoBehaviour
 	public float flashSpeed = 5f; //the speed the damageImage will fade at.
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f); // the colour the damageImage is set to, to flash. RED!
    
-	
-	//REFERENCES
+//	public int score; //NOTE: static = belongs to the class and not an instance of the class
 
-    private Animator _anim; //reference to the Animator component.
+	//PRIVATE INSTANCE VARIABLES
+	Text _scoreText;
+	private int _score;
+	private AudioSource[] _audioSources; //array of audio sources
 	private AudioSource _hurtSound; //reference to the AudioSource component.
-    private AudioSource _count;
+	private AudioSource _count;
+
+
+	//REFERENCES
+    private Animator _anim; //reference to the Animator component.
 //	private Player _playerMovement; //reference to the player's movement.
 //	private PlayerShooting _playerShooting; //reference to the PlayerShooting script.
 //	private bool _isDead; //whether the player is dead.
@@ -46,11 +50,17 @@ public class PlayerHealth : MonoBehaviour
 		
 		// Set the starting health of the player.
 		currentHealth = startingHealth;
-       
+
+		//Score stuff and score set to 0
+		_scoreText = GetComponent <Text> (); //component reference
+//		score = 0; //resets score to 0
 	}
 
 	void Update ()
 	{
+		//Creating score text with concatenation
+//		_scoreText.text = "Score: " + score; //basic concatenation for the text variable to set the string and it's int value
+
 		// If the player has just been damaged
 		if(_damaged)
 		{
@@ -72,10 +82,11 @@ public class PlayerHealth : MonoBehaviour
 	
 	//PUBLIC METHODS
 	//this method is called by other scripts in Unity. (must be public, or won't work)
-    public void PickBottle(int amount)
-    {
-        this._count.Play();
-    }
+//    public void PickBottle(int amount)
+//    {
+//        this._count.Play();
+//    }
+
 	public void TakeDamage (int amount)
 	{
 		// Set the damaged flag so the screen will flash

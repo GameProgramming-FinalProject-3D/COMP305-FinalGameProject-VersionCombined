@@ -17,8 +17,6 @@ public class BottlePickUp : MonoBehaviour
     // private GameObject _player;
     public Text scoreLabel;
 
-
-
     private int _scoreValue;
     //Public Properties
     public int Score
