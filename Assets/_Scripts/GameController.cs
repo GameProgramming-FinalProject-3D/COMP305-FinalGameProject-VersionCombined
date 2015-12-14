@@ -1,16 +1,8 @@
-﻿/*
-	Script File:		GameController.cs
-	Author:				Shruti Kirti Kaushal
-	Date Modified:		...
-	Description:		...
-	Revision History:	...
-*/
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour 
-{
+public class GameController : MonoBehaviour {
     //Public Instance Variables
     public Text scoreLabel;
     public Text livesLabel;
@@ -67,7 +59,10 @@ public class GameController : MonoBehaviour
         
             this._livesValue -= value;
             this._updateScoreBoard();
+        
+
     }
+
 
     // Use this for initialization
     void Start () {
@@ -78,8 +73,8 @@ public class GameController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update () 
-	{
+    void Update () {
+	
 	}
 
     //Private Method
@@ -88,4 +83,7 @@ public class GameController : MonoBehaviour
         this.scoreLabel.text = "Score: " + this._scoreValue;
         this.livesLabel.text = "Lives: " + this._livesValue;
     }
+   
+
+
 }

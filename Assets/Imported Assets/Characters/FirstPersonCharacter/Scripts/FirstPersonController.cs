@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -28,10 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
-        //Reference To Animator
-        public Animator rifleAnimator;
-
-
+		private Text _gameOverText;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -211,17 +209,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             bool waswalking = m_IsWalking;
 
-           //play Aim animation when right mouse button is clicked
-           if(CrossPlatformInputManager.GetButton("Fire2"))
-            {
-                this.rifleAnimator.SetBool("Aim", true);
-            }
-           else
-            {
-                this.rifleAnimator.SetBool("Aim", false);
-            }
-
-
 #if !MOBILE_INPUT
             // On standalone builds, walk/run speed is modified by a key press.
             // keep track of whether or not the character is walking or running
@@ -251,7 +238,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
-
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
