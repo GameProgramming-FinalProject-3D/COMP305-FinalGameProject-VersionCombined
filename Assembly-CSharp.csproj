@@ -126,7 +126,6 @@
      <Compile Include="Assets\Imported Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointProgressTracker.cs" />
-     <Compile Include="Assets\_Scripts\BottlePickUp.cs" />
      <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\_Scripts\Enemy Scripts\EnemyMovement.cs" />
@@ -135,6 +134,7 @@
      <Compile Include="Assets\_Scripts\Player Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\_Scripts\Player Scripts\PlayerScore.cs" />
      <Compile Include="Assets\_Scripts\Player Scripts\PlayerShooting.cs" />
+     <Compile Include="Assets\_Scripts\StartMenuController.cs" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Downloaded Assets\Kitten\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
