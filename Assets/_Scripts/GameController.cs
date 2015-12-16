@@ -14,7 +14,6 @@ public class GameController : MonoBehaviour
     //Public Instance Variables
     public Text scoreLabel;
     public Text livesLabel;
-    public Text gameOverLabel;
 
     //private Instance Variables
     private int _scoreValue;
@@ -74,7 +73,6 @@ public class GameController : MonoBehaviour
         this._scoreValue = 0;
         this._livesValue = 5;
         this._updateScoreBoard();
-        this.gameOverLabel.enabled = false;
     }
 
     // Update is called once per frame

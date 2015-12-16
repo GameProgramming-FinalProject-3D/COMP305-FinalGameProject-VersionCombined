@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\GameInterface\StartMenuController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Faim\Desktop\COMP305-FinalProject3D-Faim&amp;Shruti\Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs">
     <Files>
-      <File FileName="Assets\_Scripts\GameInterface\InstructionsController.cs" Line="26" Column="26" />
-      <File FileName="Assets\_Scripts\GameInterface\StartMenuController.cs" Line="38" Column="34" />
+      <File FileName="Assets\_Scripts\ItemController.cs" Line="16" Column="2" />
+      <File FileName="Assets\DoorController.cs" Line="12" Column="4" />
+      <File FileName="c:\Users\Faim\Desktop\COMP305-FinalProject3D-Faim&amp;Shruti\Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs" Line="207" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

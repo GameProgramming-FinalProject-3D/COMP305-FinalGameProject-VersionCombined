@@ -99,32 +99,33 @@ public class PlayerHealth : MonoBehaviour
 		
 		_hurtSound.Play ();// Play the hurt sound effect.
 		
-//		// straightforward...health equls or below to 0 and !isDead = call Death()
-//		if(currentHealth <= 0 && !_isDead)
-//		{
-//			// ... it should die.
-//			Death ();
-//		}
+//		// straightforward...health equals or below to 0, then call Death()
+		if(currentHealth <= 0)
+		{
+			// Player dies
+			Death ();
+
+//			Application.LoadLevel("GameOver");
+		}
 	}
 	
-//	//Method for being dead
-//	void Death ()
-//	{
+	//Method for being dead
+	void Death ()
+	{
+		//Calls "GameOver" scene
+		Application.LoadLevel("GameOver");
+
+//		//Carry out the final score from player
+//
+//
 //		// Set the death flag so this function won't be called again.
 //		_isDead = true;
-//		
-//		// Turn off any remaining shooting effects.
-//		_playerShooting.DisableEffects ();
-//		
-//		
-//		_anim.SetTrigger ("Die");// Tell the animator that the player is dead.
-//		
+//
 //		// Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
-//		_hurtSound.clip = deathClip;
 //		_hurtSound.Play ();
 //		
 //		// Turn off the movement and shooting scripts.
 //		_playerMovement.enabled = false; //stops player movement script
 //		_playerShooting.enabled = false;//stops player shooting script
-//	}       
+	}       
 }
