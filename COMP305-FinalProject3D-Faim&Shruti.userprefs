@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Faim\Desktop\COMP305-FinalProject3D-Faim&amp;Shruti\Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\SceneTransitions\TransitionToLevel02Controller.cs">
     <Files>
-      <File FileName="Assets\_Scripts\ItemController.cs" Line="16" Column="2" />
-      <File FileName="Assets\DoorController.cs" Line="12" Column="4" />
-      <File FileName="c:\Users\Faim\Desktop\COMP305-FinalProject3D-Faim&amp;Shruti\Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs" Line="207" Column="4" />
+      <File FileName="Assets\_Scripts\SceneTransitions\TransitionToLevel02Controller.cs" Line="11" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
