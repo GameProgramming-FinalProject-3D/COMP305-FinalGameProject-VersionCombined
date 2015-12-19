@@ -8,7 +8,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ItemController : MonoBehaviour 
+public class ItemController : MonoBehaviour
 {
 	//PUBLIC INSTANCE VARIABLES
 	//	public int scoreValue = 10;
