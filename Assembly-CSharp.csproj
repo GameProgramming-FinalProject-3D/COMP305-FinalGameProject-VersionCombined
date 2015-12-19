@@ -138,6 +138,9 @@
      <Compile Include="Assets\_Scripts\SceneTransitions\InstructionsController.cs" />
      <Compile Include="Assets\_Scripts\SceneTransitions\StartMenuController.cs" />
      <Compile Include="Assets\_Scripts\SceneTransitions\TransitionToLevel02Controller.cs" />
+     <Compile Include="Assets\_Scripts\SceneTransitions\TransitionToLevel03Controller.cs" />
+     <Compile Include="Assets\_Scripts\SceneTransitions\TransitionToWinScreenController.cs" />
+     <Compile Include="Assets\_Scripts\SceneTransitions\YouWinController.cs" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
@@ -159,7 +162,7 @@
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Imported Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Downloaded Assets\Handpainted Forest Environment Free Sample\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />

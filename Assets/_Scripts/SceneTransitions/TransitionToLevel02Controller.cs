@@ -8,7 +8,7 @@ public class TransitionToLevel02Controller : MonoBehaviour
 	{
 		if(other.gameObject.CompareTag("Player"))
 		{
-			Application.LoadLevel("GameOver");
+			Application.LoadLevel("Level02");
 		}
 	}
 }
